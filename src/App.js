@@ -11,17 +11,19 @@ import 'ag-grid/dist/styles/theme-fresh.css'
 class App extends Component {
   render() {
     return (
-      <Provider store={store}>
-        <div style={{
-            height: '100%',
-            overflow: 'hidden'
-          }}>
-          <Grid />
-          <div className="state-view" >
-            <MyState />
-          </div>
-        </div>
-      </Provider>
+      <div className="app-container">
+        <h2 className="app-header">ag-grid-react-redux-state</h2>
+
+        <Provider store={store}>
+            <div className="app-body">
+              <Grid />
+              <div className="state-view" >
+                <MyState />
+              </div>
+            </div>
+
+        </Provider>
+      </div>
     );
   }
 }

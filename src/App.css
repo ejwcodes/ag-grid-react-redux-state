@@ -1,3 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -5,20 +11,47 @@ html, body {
 }
 #root {
   height: 100%;
+  overflow-y: hidden;
+}
+.app-header {
+  height: 27px;
+  margin-bottom: 10px;
+}
+.app-container {
+  height: 100%;
+  margin: 0px 10px 10px 10px;
+  overflow-y: hidden;
+}
+.app-body {
+  height: calc(100% - (67px));
 }
 .sample-grid {
   height: 100%;
-  width: 500px;
+  width: 50%;
   float: left;
 }
 .state-view {
+  width:calc(50% - 10px);
   height: 100%;
   float: left;
   overflow-y: auto;
+  margin-left: 10px;
 }
 
 .state-info > pre {
-  width: 200px;
+  width: 33.33%;
   overflow-y: none;
   float: left;
+}
+
+@media (max-width: 800px) {
+  .sample-grid {
+    height: calc(50% - 33.5px);
+    width: 100%;
+  }
+  .state-view {
+    height: calc(50% - 33.5px);
+    width: 100%;
+    margin-left: 0px;
+  }
 }

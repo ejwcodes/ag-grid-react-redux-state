@@ -10,6 +10,7 @@ function MyState(props) {
 
   return (
     <div className="state-info">
+      <h4>State Objects</h4>
       <pre><header>Column State</header>
         {string(store.columnState)}
       </pre>
