@@ -3,7 +3,7 @@ A reducer and pre-wrapped ReactAgGrid implementation that saves column state to 
 
 ## Example
 
-Add reducer to your store
+Add the reducer to your store with the key 'grid'
 ```javascript
 import gridReducer from "./gridReducer.js"
 const reducer = combineReducers({
@@ -13,7 +13,7 @@ const reducer = combineReducers({
 var store = createStore(reducer)
 ```
 
-Use the ReduxGrid which is AgGrid already wrapped with the [ReduxGrid HOC](https://github.com/hacocacyb/ag-grid-react-redux-state/blob/master/src/ReduxGrid.js).
+Use the ReduxGrid which is AgGrid already wrapped with the [ReduxGrid HOC](https://github.com/hacocacyb/ag-grid-react-redux-state/blob/master/lib/ReduxGrid.js).
 ```javascript
 import ReduxGrid from './ReduxGrid'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import ReduxGrid from './ReduxGrid'
+import ReduxGrid from '../lib/ReduxGrid'
 const data = []
 for (let x = 1; x < 12000; x++) {
   data.push({
