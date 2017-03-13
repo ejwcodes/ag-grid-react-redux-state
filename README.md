@@ -1,5 +1,7 @@
 # ag-grid-react-redux-state
-A reducer and pre-wrapped ReactAgGrid implementation that saves column state to redux state.
+A reducer and pre-wrapped ReactAgGrid implementation that saves the column state
+ of your grid to the redux store. Column definitions are updated with the state from
+ the store on mapStateToProps.
 
 ## Example
 
@@ -13,7 +15,7 @@ const reducer = combineReducers({
 var store = createStore(reducer)
 ```
 
-Use the ReduxGrid which is AgGrid already wrapped with the [ReduxGrid HOC](https://github.com/hacocacyb/ag-grid-react-redux-state/blob/master/lib/ReduxGrid.js).
+Use the ReduxGrid which is AgGrid already wrapped with the [ReduxGrid HOC](https://github.com/hacocacyb/ag-grid-react-redux-state/blob/master/src/lib/ReduxGrid.js).
 ```javascript
 import ReduxGrid from './ReduxGrid'
 
