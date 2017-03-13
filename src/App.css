@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  height: 100%;
+}
+.sample-grid {
+  height: 100%;
+  width: 500px;
+  float: left;
+}
+.state-view {
+  height: 100%;
+  float: left;
+  overflow-y: auto;
+}
+
+.state-info > pre {
+  width: 200px;
+  overflow-y: none;
+  float: left;
+}
